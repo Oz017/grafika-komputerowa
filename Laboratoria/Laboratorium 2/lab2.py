@@ -50,9 +50,6 @@ def draw_rectangle(x,y,a,b):
     glEnd()
 
 def draw_rectangle_deformed(x, y, a, b, d=0.0):
-    """
-    Rysuje prostokąt o środku (x, y) i wymiarach a, b z możliwością deformacji d.
-    """
     hx = a / 2.0
     hy = b / 2.0
 
@@ -138,7 +135,7 @@ def draw_sierpinski_carpet_iterative(x, y, a, b, depth):
 
         rectangles = next_rectangles
 
-    # Rysujemy wszystkie zgromadzone prostokąty
+    # Rysuje wszystkie zgromadzone prostokąty
     for rx, ry, ra, rb in rectangles:
         draw_rectangle(rx, ry, ra, rb)
 
